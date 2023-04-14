@@ -1,0 +1,112 @@
+.logo {
+  font-family: 'Film P3', sans-serif;
+  font-weight: 700;
+  line-height: 1.08;
+  letter-spacing: 0.3em;
+
+  @media screen and (max-width: 400px) {
+    letter-spacing: 0.2em;
+  }
+  @media screen and (max-width: 370px) {
+    letter-spacing: 0.1em;
+  }
+
+  // <span class="logo logo--dark">MIMINO</span>
+  &--dark {
+    font-size: 40px;
+    color: #828282;
+
+    @media screen and (min-width: 1024px) {
+      font-size: 64px;
+    }
+  }
+
+  &--bright {
+    font-size: 40px;
+    color: #ffffff;
+
+    @media screen and (min-width: 1024px) {
+      font-size: 64px;
+    }
+  }
+}
+
+%text-shadow {
+  background-color: #ffffff;
+  color: transparent;
+  text-shadow: -4px -4px 4px rgba(0, 0, 0, 0.25), 0 0 0 #ffffff,
+    -5px -5px 5px rgba(0, 0, 0, 0.45);
+  background-clip: text;
+
+  /* Don't show shadows when selecting text */
+  ::selection {
+    background: #5af;
+    color: #fff;
+    text-shadow: none;
+  }
+}
+
+.header__logo {
+  text-decoration: none;
+  font-size: 36px;
+  transition: color 250ms linear;
+
+  @extend %text-shadow;
+
+  &:hover,
+  &:focus {
+    color: #f3c653;
+  }
+
+  @media screen and (min-width: 1024px) {
+    font-size: 40px;
+  }
+}
+
+.hero__logo {
+  margin-bottom: 24px;
+
+  text-align: center;
+  font-size: 96px;
+
+  @extend %text-shadow;
+
+  @media screen and (min-width: 1024px) {
+    margin-bottom: 16px;
+  }
+  @media screen and (min-width: 1280px) {
+    margin-bottom: 32px;
+  }
+
+  @media screen and (min-width: 1024px) {
+    font-size: 128px;
+  }
+
+  & span {
+    margin-left: 0.3em;
+
+    @media screen and (max-width: 370px) {
+      margin-left: 0.1em;
+    }
+  }
+}
+
+.footer__logo {
+  text-decoration: none;
+  font-size: 40px;
+  color: #f3c653;
+  transition: color 250ms linear;
+
+  &:hover,
+  &:focus {
+    color: #c79002;
+  }
+
+  @media screen and (max-width: 370px) {
+    margin-right: 20px;
+  }
+
+  @media screen and (min-width: 1024px) {
+    font-size: 64px;
+  }
+}

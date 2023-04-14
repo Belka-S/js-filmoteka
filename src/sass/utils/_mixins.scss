@@ -1,0 +1,21 @@
+@mixin check {
+  outline: solid 1px tomato;
+}
+
+@mixin outline {
+  transition: outline 100ms;
+
+  &:hover,
+  &:focus {
+    outline: 2px solid blue;
+    outline-offset: -1px;
+  }
+}
+
+@mixin retina {
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    @content;
+  }
+}
