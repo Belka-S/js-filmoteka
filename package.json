@@ -1,31 +1,35 @@
 {
-  "name": "parcel_starter",
+  "name": "js-filmoteka",
   "version": "1.0.0",
   "description": "parcel starter",
-  "homepage": "https://belka-s.github.io/parcel_starter",
+  "homepage": "https://belka-s.github.io/js-filmoteka",
   "scripts": {
     "start": "parcel src/*.html",
-    "build": "parcel build src/*.html --public-url /parcel_starter/"
+    "build": "parcel build src/*.html --public-url /js-filmoteka/"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Belka-S/parcel_starter.git"
+    "url": "git+https://github.com/Belka-S/js-filmoteka.git"
   },
   "keywords": [],
   "author": "BS",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/Belka-S/parcel_starter/issues"
+    "url": "https://github.com/Belka-S/js-filmoteka/issues"
   },
   "dependencies": {
-    "modern-normalize": "^1.1.0"
+    "axios": "^1.3.4",
+    "modern-normalize": "^1.1.0",
+    "youtube-player": "^5.6.0"
   },
   "devDependencies": {
     "@parcel/transformer-sass": "^2.8.3",
+    "buffer": "^5.7.1",
     "parcel": "^2.8.3",
     "parcel-reporter-clean-dist": "^1.0.4",
     "parcel-transformer-hbs": "^1.0.4",
-    "posthtml-include": "^1.7.4"
+    "posthtml-include": "^1.7.4",
+    "process": "^0.11.10"
   },
   "browserslist": "> 0.5%, last 2 versions, not dead"
 }
